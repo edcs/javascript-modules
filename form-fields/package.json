@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/form-fields",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Focus/change form field interactions",
   "main": "lib/form-fields.js",
   "scripts": {

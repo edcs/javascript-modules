@@ -2,7 +2,7 @@
   "name": "@pod-point/module-loader",
   "version": "0.0.1",
   "description": "Module loader.",
-  "main": "index.js",
+  "main": "lib/module-loader.js",
   "scripts": {
     "compile": "babel src --out-dir lib"
   },
