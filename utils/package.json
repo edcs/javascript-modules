@@ -2,7 +2,7 @@
   "name": "@pod-point/utils",
   "version": "0.0.2",
   "description": "Common JS utilities.",
-  "main": "index.js",
+  "main": "lib/utils.js",
   "scripts": {
     "compile": "babel src --out-dir lib"
   },

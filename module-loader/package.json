@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/module-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module loader.",
   "main": "lib/module-loader.js",
   "scripts": {
@@ -11,5 +11,9 @@
     "url": "https://github.com/Pod-Point/javascript-modules/module-loader"
   },
   "author": "POD Point",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@pod-point/dom-ops": "0.0.2",
+    "@pod-point/utils": "0.0.2"
+  }
 }
