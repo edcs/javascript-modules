@@ -37,7 +37,7 @@ Class that can define and manipulate SVG elements. Build up an image by creating
 
 ### .prepend()
 
-    svg.append(new BuildSVG('path')); // Adds a path tag before all children
+    svg.prepend(new BuildSVG('path')); // Adds a path tag before all children
 
 ### .create()
     
