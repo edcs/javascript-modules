@@ -10,7 +10,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var _domDelegate = require('dom-delegate');
 
-var _incDom = require('../inc/dom');
+var _podPointDomOps = require('@pod-point/dom-ops');
 
 var _popmotion = require('popmotion');
 
@@ -31,14 +31,14 @@ var FormFields = (function () {
         key: 'checkForContent',
         value: function checkForContent(element) {
             var container = this.getInputContainer(element),
-                callback = element.value ? _incDom.addClass : _incDom.removeClass;
+                callback = element.value ? _podPointDomOps.addClass : _podPointDomOps.removeClass;
 
             callback(container, HAS_CONTENT);
         }
     }, {
         key: 'checkForErrors',
         value: function checkForErrors(element) {
-            (0, _incDom.removeClass)(this.getInputContainer(element), HAS_ERROR);
+            (0, _podPointDomOps.removeClass)(this.getInputContainer(element), HAS_ERROR);
         }
     }, {
         key: 'bindEvents',
@@ -80,12 +80,12 @@ var FormFields = (function () {
     }, {
         key: 'removeFocus',
         value: function removeFocus(element) {
-            (0, _incDom.removeClass)(this.getInputContainer(element), HAS_FOCUS);
+            (0, _podPointDomOps.removeClass)(this.getInputContainer(element), HAS_FOCUS);
         }
     }, {
         key: 'giveFocus',
         value: function giveFocus(element) {
-            (0, _incDom.addClass)(this.getInputContainer(element), HAS_FOCUS);
+            (0, _podPointDomOps.addClass)(this.getInputContainer(element), HAS_FOCUS);
         }
     }]);
 
