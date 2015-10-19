@@ -1,0 +1,15 @@
+{
+  "name": "@pod-point/settings",
+  "version": "0.0.1",
+  "description": "Common POD Point site settings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pod-Point/javascript-modules/settings"
+  },
+  "author": "POD Point",
+  "license": "MIT"
+}

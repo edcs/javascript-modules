@@ -1,0 +1,16 @@
+{
+  "name": "@pod-point/dom-ops",
+  "version": "0.0.1",
+  "description": "Perform common DOM operations.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pod-Point/javascript-modules/dom-ops"
+  },
+  "author": "POD Point",
+  "license": "MIT"
+}
