@@ -2,7 +2,7 @@
   "name": "@pod-point/activity-bar",
   "version": "0.0.1",
   "description": "Show network activity.",
-  "main": "index.js",
+  "main": "lib/activity-bar.js",
   "scripts": {
     "compile": "babel src --out-dir lib"
   },
@@ -11,5 +11,9 @@
     "url": "https://github.com/Pod-Point/javascript-modules/activity-bar"
   },
   "author": "POD Point",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@pod-point/build-svg": "0.0.2",
+    "@pod-point/dom-ops": "0.0.2"
+  }
 }
