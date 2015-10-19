@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/activity-bar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Show network activity.",
   "main": "lib/activity-bar.js",
   "scripts": {
