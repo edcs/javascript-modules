@@ -2,8 +2,12 @@
 
 ## Install
 
-    npm install pod-point-module-name --save
+    npm install @pod-point/module --save
 
-## Use
+## Import
 
-Usage instructions found in each module's README.md.
+    import module from '@pod-point/module';
+
+## Usage
+
+Instructions can be found in each module's README.md.
