@@ -1,10 +1,9 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.each = each;
-exports.whenReady = whenReady;
 exports.throttle = throttle;
 exports.whenCalm = whenCalm;
 
@@ -23,14 +22,6 @@ function each(props, callback) {
         if (callback(prop, key, props) === false) {
             break;
         }
-    }
-}
-
-function whenReady(callback) {
-    if (document.readyState != 'loading') {
-        callback();
-    } else {
-        document.addEventListener('DOMContentLoaded', callback);
     }
 }
 

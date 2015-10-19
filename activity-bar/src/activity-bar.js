@@ -1,6 +1,7 @@
 import ui from 'popmotion';
 import BuildSVG from '@pod-point/build-svg';
 import { appendChild, removeChild } from '@pod-point/dom-ops';
+import { GREEN } from '@pod-point/settings';
 
 const height = 2;
 const width = 2000;
@@ -20,7 +21,7 @@ function createBar() {
 
     line = new BuildSVG('path', {
         d: `M0 1L${width} 1`,
-        stroke: '#8CC63F'
+        stroke: GREEN
     });
 
     line.attr('stroke-width', 2);

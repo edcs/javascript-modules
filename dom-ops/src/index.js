@@ -34,6 +34,7 @@ export function parent(element) {
     return element.parentNode;
 }
 
+// Currently undocumented - `select` performs this operation
 export function child(element, selector) {
     return element.querySelectorAll(selector);
 }
@@ -52,4 +53,12 @@ export function appendChild(host, element) {
 
 export function removeChild(host, element) {
     host.removeChild(element);
+}
+
+export function whenReady(callback) {
+    if (document.readyState != 'loading') {
+        callback();
+    } else {
+        document.addEventListener('DOMContentLoaded', callback);
+    }
 }

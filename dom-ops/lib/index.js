@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
     value: true
 });
 exports.nodesToArray = nodesToArray;
@@ -14,6 +14,7 @@ exports.child = child;
 exports.empty = empty;
 exports.appendChild = appendChild;
 exports.removeChild = removeChild;
+exports.whenReady = whenReady;
 
 function nodesToArray(nodes) {
     return nodes.length ? [].slice.call(nodes) : [nodes];
@@ -57,6 +58,8 @@ function parent(element) {
     return element.parentNode;
 }
 
+// Currently undocumented - `select` performs this operation
+
 function child(element, selector) {
     return element.querySelectorAll(selector);
 }
@@ -75,4 +78,12 @@ function appendChild(host, element) {
 
 function removeChild(host, element) {
     host.removeChild(element);
+}
+
+function whenReady(callback) {
+    if (document.readyState != 'loading') {
+        callback();
+    } else {
+        document.addEventListener('DOMContentLoaded', callback);
+    }
 }

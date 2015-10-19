@@ -16,14 +16,6 @@ export function each(props, callback) {
     }
 }
 
-export function whenReady(callback) {
-    if (document.readyState != 'loading') {
-        callback();
-    } else {
-        document.addEventListener('DOMContentLoaded', callback);
-    }
-}
-
 export function throttle(callback, limit = 35) {
     var wait = false;
 

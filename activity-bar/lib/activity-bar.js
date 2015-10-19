@@ -18,6 +18,8 @@ var _podPointBuildSvg2 = _interopRequireDefault(_podPointBuildSvg);
 
 var _podPointDomOps = require('@pod-point/dom-ops');
 
+var _podPointSettings = require('@pod-point/settings');
+
 var height = 2;
 var width = 2000;
 
@@ -36,7 +38,7 @@ function createBar() {
 
     line = new _podPointBuildSvg2['default']('path', {
         d: 'M0 1L' + width + ' 1',
-        stroke: '#8CC63F'
+        stroke: _podPointSettings.GREEN
     });
 
     line.attr('stroke-width', 2);
