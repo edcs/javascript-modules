@@ -2,9 +2,9 @@
   "name": "@pod-point/build-svg",
   "version": "0.0.1",
   "description": "Build SVGs from these building blocks.",
-  "main": "index.js",
+  "main": "lib/BuildSVG.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel src --out-dir lib"
   },
   "author": "POD Point",
   "license": "MIT"

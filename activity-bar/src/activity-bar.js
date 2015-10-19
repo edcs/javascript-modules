@@ -1,6 +1,6 @@
 import ui from 'popmotion';
-import BuildSVG from '../inc/BuildSVG';
-import { appendChild, removeChild } from '../inc/dom';
+import BuildSVG from '@pod-point/build-svg';
+import { appendChild, removeChild } from '@pod-point/dom-ops';
 
 const height = 2;
 const width = 2000;

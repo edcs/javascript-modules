@@ -4,7 +4,7 @@
   "description": "Show network activity.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
