@@ -38,7 +38,7 @@ var persistentModules;
 var domModules;
 
 function loadDOMModules() {
-    var elementsWithModules = (0, _podPointDomOps.select)('[' + DATA_TAG + ']');
+    var elementsWithModules = nodesToArray((0, _podPointDomOps.select)('[' + DATA_TAG + ']'));
 
     activeDOMModules = [];
 

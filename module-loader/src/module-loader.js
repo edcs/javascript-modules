@@ -31,7 +31,7 @@ var persistentModules;
 var domModules;
 
 function loadDOMModules() {
-    var elementsWithModules = select(`[${DATA_TAG}]`);
+    var elementsWithModules = nodesToArray(select(`[${DATA_TAG}]`));
 
     activeDOMModules = [];
 
