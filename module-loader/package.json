@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/module-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Module loader.",
   "main": "lib/module-loader.js",
   "scripts": {

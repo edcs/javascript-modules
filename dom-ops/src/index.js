@@ -129,7 +129,11 @@ export function matches(element, selector) {
 */
 
 export function nodesToArray(nodes) {
-    return nodes.length ? [].slice.call(nodes) : [nodes];
+    if (!nodes) {
+        return false;
+    } else {
+        return nodes.length ? [].slice.call(nodes) : [nodes];
+    }
 }
 
 export function whenReady(callback) {

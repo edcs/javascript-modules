@@ -165,7 +165,11 @@ function matches(element, selector) {
 */
 
 function nodesToArray(nodes) {
-    return nodes.length ? [].slice.call(nodes) : [nodes];
+    if (!nodes) {
+        return false;
+    } else {
+        return nodes.length ? [].slice.call(nodes) : [nodes];
+    }
 }
 
 function whenReady(callback) {
