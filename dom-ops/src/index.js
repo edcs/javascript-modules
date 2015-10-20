@@ -4,7 +4,9 @@
     ==============================================================
 */
 export function select(selector, root = document) {
-    return root.querySelectorAll(selector);
+    var selection = root.querySelectorAll(selector);
+
+    return selection.length ? selection : null;
 }
 
 export function selectFirst(selector, root = document) {
@@ -129,7 +131,7 @@ export function matches(element, selector) {
 */
 
 export function nodesToArray(nodes) {
-    if (!nodes) {
+    if (!nodes || nodes.length === 0) {
         return false;
     } else {
         return nodes.length ? [].slice.call(nodes) : [nodes];

@@ -33,7 +33,9 @@ exports.whenReady = whenReady;
 function select(selector) {
     var root = arguments.length <= 1 || arguments[1] === undefined ? document : arguments[1];
 
-    return root.querySelectorAll(selector);
+    var selection = root.querySelectorAll(selector);
+
+    return selection.length ? selection : null;
 }
 
 function selectFirst(selector) {
@@ -165,7 +167,7 @@ function matches(element, selector) {
 */
 
 function nodesToArray(nodes) {
-    if (!nodes) {
+    if (!nodes || nodes.length === 0) {
         return false;
     } else {
         return nodes.length ? [].slice.call(nodes) : [nodes];
