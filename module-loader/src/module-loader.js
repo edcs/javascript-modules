@@ -18,7 +18,7 @@
 */
 
 // Other imports
-import { select } from '@pod-point/dom-ops';
+import { select, nodesToArray } from '@pod-point/dom-ops';
 import { each } from '@pod-point/utils';
 
 const DATA_TAG = 'data-js-module';
