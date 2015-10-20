@@ -8,61 +8,125 @@ Replacement functions for common jQuery DOM operations.
 
 ## Functions
 
-### select
+### Selection
+
+#### select
 
     select(selector, root = document);
 
-Creates an array from selected elements, `false` if none found.
+Returns selected elements, or `null` if none found.
 
-### addClass
+#### selectFirst
 
-    addClass(elements, className);
+    selectFirst(selector, root = document);
 
-Adds a class to one or multiple elements.
+Returns first selected element, or `null` if none found.
 
-### removeClass
+#### selectById
 
-    removeClass(element, className);
+    selectById(id);
 
-Removes a class from one or multiple elements.
+Returns element with matching `id`, or `null` if none found.
 
-### hasClass
+### Traversal
 
-    hasClass(element, className);
+#### closest
 
-Returns `true` if **all** provided elements contain the provided `className`.
+    closest(element, selector);
 
-### nextElement
+Returns the closest element up the node tree that matches `selector`.
+
+#### nextElement
 
     nextElement(element);
 
 Returns the next sibling element to `element`.
 
-### parent
+#### parent
 
     parent(element);
 
 Returns the parent element to `element`.
 
-### empty
+### Manipulation
 
-    empty(element);
+#### addClass
 
-Removes all nodes from the provided `element`.
+    addClass(elements, className);
 
-### appendChild
+Adds a class to one or multiple elements.
+
+#### removeClass
+
+    removeClass(element, className);
+
+Removes a class from one or multiple elements.
+
+#### appendChild
 
     appendChild(parent, element);
 
 Appends `element` after all children of `parent`.
 
-### removeChild
+#### removeChild
 
     removeChild(parent, element);
 
 Removes `element` from `parent`.
 
-### whenReady
+#### insertBefore
+
+    insertBefore(element, htmlString);
+
+Insert `htmlString` immedietly before `element`.
+
+#### insertAfter
+
+    insertAfter(element, htmlString);
+
+Insert `htmlString` immedietly after `element`.
+
+#### insertStart
+
+    insertStart(element, htmlString);
+
+Insert `htmlString` immedietly after `element`'s opening tag.
+
+#### insertEnd
+
+    insertEnd(element, htmlString);
+
+Insert `htmlString` immedietly before `element`'s closing tag.
+
+#### empty
+
+    empty(element);
+
+Removes all nodes from the provided `element`.
+
+### Identification
+
+#### hasClass
+
+    hasClass(element, className);
+
+Returns `true` if **all** provided elements contain the provided `className`.
+
+#### matches
+
+    matches(element, selector);
+
+Returns `true` if `element` matches `selector`.
+
+### Helpers
+
+#### nodesToArray
+
+    nodesToArray(elements);
+
+Returns array of elements.
+
+#### whenReady
 
     whenReady(callback);
 

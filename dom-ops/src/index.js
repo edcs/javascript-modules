@@ -1,29 +1,42 @@
-export function nodesToArray(nodes) {
-    return nodes.length ? [].slice.call(nodes) : [nodes];
-}
-
+/*
+    ==============================================================
+    SELECTION
+    ==============================================================
+*/
 export function select(selector, root = document) {
-    var elements = root.querySelectorAll(selector);
-
-    return elements.length ? nodesToArray(elements) : false;
+    return root.querySelectorAll(selector);
 }
 
-export function addClass(element, className) {
-    nodesToArray(element).forEach((node) => node.classList.add(className));
+export function selectFirst(selector, root = document) {
+    return root.querySelector(selector);
 }
 
-export function removeClass(element, className) {
-    nodesToArray(element).forEach((node) => node.classList.remove(className));
+export function selectById(id) {
+    return document.getElementById(id);
 }
 
-export function hasClass(element, className) {
-    var hasClass = true;
-    nodesToArray(element).forEach((node) => {
-        if (!node.classList.contains(className)) {
-            hasClass = false;
+/*
+    ==============================================================
+    TRAVERSAL
+    ==============================================================
+*/
+
+export function closest(element, selector) {
+    var closest;
+
+    while (!closest) {
+        if (matches(element, selector)) {
+            closest = element;
         }
-    });
-    return hasClass;
+
+        element = parent(element);
+
+        if (!element || element === document) {
+            break;
+        }
+    }
+
+    return closest;
 }
 
 export function nextElement(element) {
@@ -39,12 +52,18 @@ export function child(element, selector) {
     return element.querySelectorAll(selector);
 }
 
-export function empty(element) {
-    nodesToArray(element).forEach((node) => {
-        while (node.firstChild) {
-            node.removeChild(node.firstChild);
-        }
-    });
+/*
+    ==============================================================
+    MANIPULATION
+    ==============================================================
+*/
+
+export function addClass(element, className) {
+    nodesToArray(element).forEach((node) => node.classList.add(className));
+}
+
+export function removeClass(element, className) {
+    nodesToArray(element).forEach((node) => node.classList.remove(className));
 }
 
 export function appendChild(host, element) {
@@ -53,6 +72,64 @@ export function appendChild(host, element) {
 
 export function removeChild(host, element) {
     host.removeChild(element);
+}
+
+export function clone(element) {
+    return element.cloneNode(true);
+}
+
+export function insertBefore(element, html) {
+    element.insertAdjacentHTML('beforebegin', html);
+}
+
+export function insertAfter(element, html) {
+    element.insertAdjacentHTML('afterend', html);
+}
+
+export function insertStart(element, html) {
+    element.insertAdjacentHTML('afterbegin', html);
+}
+
+export function insertEnd(element, html) {
+    element.insertAdjacentHTML('beforeend', html);
+}
+
+export function empty(element) {
+    nodesToArray(element).forEach((node) => {
+        while (node.firstChild) {
+            node.removeChild(node.firstChild);
+        }
+    });
+}
+
+/*
+    ==============================================================
+    IDENTIFICATION
+    ==============================================================
+*/
+
+export function hasClass(element, className) {
+    var hasClass = true;
+    nodesToArray(element).forEach((node) => {
+        if (!node.classList.contains(className)) {
+            hasClass = false;
+        }
+    });
+    return hasClass;
+}
+
+export function matches(element, selector) {
+    return (element.matches || element.matchesSelector || element.msMatchesSelector).call(element, selector);
+}
+
+/*
+    ==============================================================
+    HELPERS
+    ==============================================================
+*/
+
+export function nodesToArray(nodes) {
+    return nodes.length ? [].slice.call(nodes) : [nodes];
 }
 
 export function whenReady(callback) {
