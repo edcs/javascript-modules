@@ -1,14 +1,14 @@
 {
-  "name": "@pod-point/module-loader",
-  "version": "2.0.0",
-  "description": "Module loader.",
-  "main": "lib/module-loader.js",
+  "name": "@pod-point/dom-module-loader",
+  "version": "1.0.0",
+  "description": "DOM module loader.",
+  "main": "lib/dom-module-loader.js",
   "scripts": {
     "compile": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pod-Point/javascript-modules/module-loader"
+    "url": "https://github.com/Pod-Point/javascript-modules/dom-module-loader"
   },
   "author": "POD Point",
   "license": "MIT",
