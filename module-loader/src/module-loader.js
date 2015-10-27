@@ -3,14 +3,6 @@
 
     All modules export `init` methods.
 
-    DOM modules:
-        - Can be initialised multiple times per page.
-        - Can optionally export a `destory` method.
-        - Are destroyed between page transitions.
-        - Initialised by adding the imported module name to an element's
-            `data-js-module` attribute. Multiple names can be added and are
-            space-delimited.
-
     Persistent modules:
         - Can be initialised once per page.
         - Can optionally export a `refresh` method.
@@ -18,50 +10,19 @@
 */
 
 // Other imports
-import { select, nodesToArray } from '@pod-point/dom-ops';
 import { each } from '@pod-point/utils';
 
-const DATA_TAG = 'data-js-module';
-
 var pageActive = false;
+var modules = {};
 
-var activeDOMModules = [];
+function init(newModules) {
+    modules = newModules;
 
-var persistentModules;
-var domModules;
-
-function loadDOMModules() {
-    var elementsWithModules = nodesToArray(select(`[${DATA_TAG}]`));
-
-    activeDOMModules = [];
-
-    if (elementsWithModules) {
-        elementsWithModules.forEach((element) => {
-            let modulesToLoad = element.getAttribute(DATA_TAG).split(' ');
-
-            modulesToLoad.forEach((name) => {
-                let module = domModules[name];
-
-                if (module && module.init) {
-                    module.init(element);
-                    activeDOMModules.push(module);
-                }
-            });
-        });
-    }
-}
-
-function init(dom, persistent) {
-    domModules = dom;
-    persistentModules = persistent;
-
-    each(persistentModules, (module) => {
+    each(modules, (module) => {
         if (module.init) {
             module.init();
         }
     });
-
-    loadDOMModules();
 
     pageActive = true;
 }
@@ -72,20 +33,12 @@ function reload() {
             module.refresh();
         }
     });
-
-    activeDOMModules.forEach((module) => {
-        if (module.hasOwnProperty('destroy')) {
-            module.destroy();
-        }
-    });
-
-    loadDOMModules();
 }
 
-export default function(modules) {
+export default function(newModules) {
     if (pageActive) {
         reload();
     } else {
-        init(modules.dom, modules.persistent);
+        init(newModules);
     }
 }
