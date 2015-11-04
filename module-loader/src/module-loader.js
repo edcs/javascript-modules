@@ -28,7 +28,7 @@ function init(newModules) {
 }
 
 function reload() {
-    each(persistentModules, (module) => {
+    each(modules, (module) => {
         if (module.hasOwnProperty('refresh')) {
             module.refresh();
         }

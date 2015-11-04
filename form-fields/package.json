@@ -15,5 +15,15 @@
   "dependencies": {
     "@pod-point/dom-ops": "^0.0.2",
     "dom-delegate": "^2.0.3"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-2": "^6.0.15"
   }
 }

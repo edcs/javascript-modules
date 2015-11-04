@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.each = each;
 exports.throttle = throttle;
 exports.whenCalm = whenCalm;
-
 function each(props, callback) {
     if (!props) {
         return;

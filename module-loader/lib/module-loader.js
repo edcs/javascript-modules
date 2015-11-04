@@ -34,7 +34,7 @@ function init(newModules) {
 }
 
 function reload() {
-    (0, _podPointUtils.each)(persistentModules, function (module) {
+    (0, _podPointUtils.each)(modules, function (module) {
         if (module.hasOwnProperty('refresh')) {
             module.refresh();
         }
