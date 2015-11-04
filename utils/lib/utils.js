@@ -44,7 +44,7 @@ function throttle(callback) {
 function whenCalm(callback) {
     var timeout = arguments.length <= 1 || arguments[1] === undefined ? 250 : arguments[1];
 
-    var timer;
+    var timer = undefined;
 
     return function () {
         clearTimeout(timer);

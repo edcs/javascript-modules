@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/utils",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Common JS utilities.",
   "main": "lib/utils.js",
   "scripts": {
