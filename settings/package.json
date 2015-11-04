@@ -11,15 +11,5 @@
     "url": "https://github.com/Pod-Point/javascript-modules/settings"
   },
   "author": "POD Point",
-  "license": "MIT",
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-2"
-    ]
-  },
-  "devDependencies": {
-    "babel-preset-es2015": "^6.0.15",
-    "babel-preset-stage-2": "^6.0.15"
-  }
+  "license": "MIT"
 }

@@ -11,19 +11,5 @@
     "url": "https://github.com/Pod-Point/javascript-modules/dom-module-loader"
   },
   "author": "POD Point",
-  "license": "MIT",
-  "dependencies": {
-    "@pod-point/dom-ops": "1.*.*",
-    "@pod-point/utils": "1.*.*"
-  },
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-2"
-    ]
-  },
-  "devDependencies": {
-    "babel-preset-es2015": "^6.0.15",
-    "babel-preset-stage-2": "^6.0.15"
-  }
+  "license": "MIT"
 }

@@ -3,7 +3,7 @@ export function each(props, callback) {
         return;
     }
 
-    var keys = Object.keys(props),
+    let keys = Object.keys(props),
         numKeys = keys.length;
 
     for (let i = 0; i < numKeys; i++) {
@@ -17,7 +17,7 @@ export function each(props, callback) {
 }
 
 export function throttle(callback, limit = 35) {
-    var wait = false;
+    let wait = false;
 
     return function () {
         if (!wait) {
@@ -32,7 +32,7 @@ export function throttle(callback, limit = 35) {
 }
 
 export function whenCalm(callback, timeout = 250) {
-    var timer;
+    let timer;
 
     return function () {
         clearTimeout(timer);

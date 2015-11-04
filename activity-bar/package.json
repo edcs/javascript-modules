@@ -11,21 +11,5 @@
     "url": "https://github.com/Pod-Point/javascript-modules/activity-bar"
   },
   "author": "POD Point",
-  "license": "MIT",
-  "dependencies": {
-    "@pod-point/build-svg": "0.0.2",
-    "@pod-point/dom-ops": "0.0.2",
-    "@pod-point/settings": "^1.0.0",
-    "popmotion": "^3.4.1"
-  },
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-2"
-    ]
-  },
-  "devDependencies": {
-    "babel-preset-es2015": "^6.0.15",
-    "babel-preset-stage-2": "^6.0.15"
-  }
+  "license": "MIT"
 }
