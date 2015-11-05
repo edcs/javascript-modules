@@ -58,8 +58,6 @@ class FormFields {
     giveFocus(element) {
         addClass(this.getInputContainer(element), HAS_FOCUS);
     }
-
-
 }
 
 export default {
