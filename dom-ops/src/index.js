@@ -59,6 +59,9 @@ export function child(element, selector) {
     MANIPULATION
     ==============================================================
 */
+export function create(tag = 'div') {
+    return document.createElement(tag);
+}
 
 export function addClass(element, className) {
     nodesToArray(element).forEach((node) => node.classList.add(className));

@@ -50,6 +50,12 @@ Returns the parent element to `element`.
 
 ### Manipulation
 
+#### create
+
+    create(tag);
+
+Create a new element. If no tag name is given, it defaults to `'div'`.d
+
 #### addClass
 
     addClass(elements, className);
