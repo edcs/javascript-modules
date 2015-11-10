@@ -1,5 +1,5 @@
 import { Delegate } from 'dom-delegate';
-import { addClass, removeClass } from '@pod-point/dom-ops';
+import { addClass, removeClass, select } from '@pod-point/dom-ops';
 import { css } from 'popmotion';
 
 const HAS_CONTENT = 'has-content',
@@ -9,6 +9,15 @@ const HAS_CONTENT = 'has-content',
 class FormFields {
     constructor(root = document.body) {
         this.bindEvents(root);
+        this.checkAllFieldsForContent();
+    }
+
+    checkAllFieldsForContent() {
+        var inputs = nodesToArray(select('input'));
+
+        if (inputs.length) {
+            inputs.forEach(input => this.checkForContent(input))
+        }
     }
 
     checkForContent(element) {
