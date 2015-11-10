@@ -33,7 +33,7 @@ var FormFields = (function () {
         value: function checkAllFieldsForContent() {
             var _this = this;
 
-            var inputs = nodesToArray((0, _domOps.select)('input'));
+            var inputs = (0, _domOps.nodesToArray)((0, _domOps.select)('input'));
 
             if (inputs.length) {
                 inputs.forEach(function (input) {

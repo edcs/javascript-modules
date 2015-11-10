@@ -1,5 +1,5 @@
 import { Delegate } from 'dom-delegate';
-import { addClass, removeClass, select } from '@pod-point/dom-ops';
+import { addClass, removeClass, select, nodesToArray } from '@pod-point/dom-ops';
 import { css } from 'popmotion';
 
 const HAS_CONTENT = 'has-content',
