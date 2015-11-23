@@ -6,12 +6,6 @@
   "scripts": {
     "compile": "babel src --out-dir lib"
   },
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-2"
-    ]
-  },
   "author": "POD Point",
   "license": "MIT"
 }

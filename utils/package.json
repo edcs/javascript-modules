@@ -13,12 +13,6 @@
   },
   "author": "POD Point",
   "license": "MIT",
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-2"
-    ]
-  },
   "devDependencies": {
     "babel-core": "^6.0.20"
   }
