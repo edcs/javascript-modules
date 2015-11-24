@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/module-loader",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Module loader.",
   "main": "lib/module-loader.js",
   "scripts": {
@@ -11,5 +11,10 @@
     "url": "https://github.com/Pod-Point/javascript-modules/module-loader"
   },
   "author": "POD Point",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-2": "^6.0.15"
+  }
 }

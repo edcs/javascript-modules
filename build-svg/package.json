@@ -1,11 +1,16 @@
 {
   "name": "@pod-point/build-svg",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Build SVGs from these building blocks.",
   "main": "lib/BuildSVG.js",
   "scripts": {
     "compile": "babel src --out-dir lib"
   },
   "author": "POD Point",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-2": "^6.0.15"
+  }
 }
