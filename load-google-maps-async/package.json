@@ -2,7 +2,7 @@
   "name": "@pod-point/load-google-maps-async",
   "version": "1.0.0",
   "description": "Load Google Maps asynchronously",
-  "main": "lib/load-map.js",
+  "main": "lib/load.js",
   "scripts": {
     "compile": "babel src --out-dir lib"
   },
