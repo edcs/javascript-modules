@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/load-google-maps-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load Google Maps asynchronously",
   "main": "lib/load.js",
   "scripts": {
