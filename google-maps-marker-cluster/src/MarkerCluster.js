@@ -63,7 +63,7 @@
  * @constructor
  * @extends google.maps.OverlayView
  */
-function MarkerClusterer(map, opt_markers, opt_options) {
+export default function MarkerClusterer(map, opt_markers, opt_options) {
   opt_options = {
     ...opt_options,
     imagePath: "https://s3-eu-west-1.amazonaws.com/podpoint-website/map-icons/cluster-icons.svg",
