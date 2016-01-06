@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/google-maps-marker-cluster",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cluster Google Maps markers",
   "main": "lib/MarkerCluster.js",
   "scripts": {

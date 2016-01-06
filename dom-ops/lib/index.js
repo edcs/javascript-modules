@@ -1,19 +1,50 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.select = select;
+exports.selectFirst = selectFirst;
+exports.selectById = selectById;
+exports.closest = closest;
+exports.nextElement = nextElement;
+exports.parent = parent;
+exports.child = child;
+exports.create = create;
+exports.addClass = addClass;
+exports.removeClass = removeClass;
+exports.appendChild = appendChild;
+exports.removeChild = removeChild;
+exports.clone = clone;
+exports.insertBefore = insertBefore;
+exports.insertAfter = insertAfter;
+exports.insertStart = insertStart;
+exports.insertEnd = insertEnd;
+exports.empty = empty;
+exports.hasClass = hasClass;
+exports.matches = matches;
+exports.nodesToArray = nodesToArray;
+exports.whenReady = whenReady;
 /*
     ==============================================================
     SELECTION
     ==============================================================
 */
-export function select(selector, root = document) {
+function select(selector) {
+    var root = arguments.length <= 1 || arguments[1] === undefined ? document : arguments[1];
+
     var selection = root.querySelectorAll(selector);
 
     return selection.length ? selection : null;
 }
 
-export function selectFirst(selector, root = document) {
+function selectFirst(selector) {
+    var root = arguments.length <= 1 || arguments[1] === undefined ? document : arguments[1];
+
     return root.querySelector(selector);
 }
 
-export function selectById(id) {
+function selectById(id) {
     return document.getElementById(id);
 }
 
@@ -23,7 +54,7 @@ export function selectById(id) {
     ==============================================================
 */
 
-export function closest(element, selector) {
+function closest(element, selector) {
     var closest;
 
     while (!closest) {
@@ -41,16 +72,16 @@ export function closest(element, selector) {
     return closest;
 }
 
-export function nextElement(element) {
+function nextElement(element) {
     return element.nextElementSibling;
 }
 
-export function parent(element) {
+function parent(element) {
     return element.parentNode;
 }
 
 // Currently undocumented - `select` performs this operation
-export function child(element, selector) {
+function child(element, selector) {
     return element.querySelectorAll(selector);
 }
 
@@ -59,48 +90,54 @@ export function child(element, selector) {
     MANIPULATION
     ==============================================================
 */
-export function create(tag = 'div') {
+function create() {
+    var tag = arguments.length <= 0 || arguments[0] === undefined ? 'div' : arguments[0];
+
     return document.createElement(tag);
 }
 
-export function addClass(element, className) {
-    nodesToArray(element).forEach(node => node.classList.add(className));
+function addClass(element, className) {
+    nodesToArray(element).forEach(function (node) {
+        return node.classList.add(className);
+    });
 }
 
-export function removeClass(element, className) {
-    nodesToArray(element).forEach(node => node.classList.remove(className));
+function removeClass(element, className) {
+    nodesToArray(element).forEach(function (node) {
+        return node.classList.remove(className);
+    });
 }
 
-export function appendChild(host, element) {
+function appendChild(host, element) {
     host.appendChild(element);
 }
 
-export function removeChild(host, element) {
+function removeChild(host, element) {
     host.removeChild(element);
 }
 
-export function clone(element) {
+function clone(element) {
     return element.cloneNode(true);
 }
 
-export function insertBefore(element, html) {
+function insertBefore(element, html) {
     element.insertAdjacentHTML('beforebegin', html);
 }
 
-export function insertAfter(element, html) {
+function insertAfter(element, html) {
     element.insertAdjacentHTML('afterend', html);
 }
 
-export function insertStart(element, html) {
+function insertStart(element, html) {
     element.insertAdjacentHTML('afterbegin', html);
 }
 
-export function insertEnd(element, html) {
+function insertEnd(element, html) {
     element.insertAdjacentHTML('beforeend', html);
 }
 
-export function empty(element) {
-    nodesToArray(element).forEach(node => {
+function empty(element) {
+    nodesToArray(element).forEach(function (node) {
         while (node.firstChild) {
             node.removeChild(node.firstChild);
         }
@@ -113,9 +150,9 @@ export function empty(element) {
     ==============================================================
 */
 
-export function hasClass(element, className) {
+function hasClass(element, className) {
     var hasClass = true;
-    nodesToArray(element).forEach(node => {
+    nodesToArray(element).forEach(function (node) {
         if (!node.classList.contains(className)) {
             hasClass = false;
         }
@@ -123,7 +160,7 @@ export function hasClass(element, className) {
     return hasClass;
 }
 
-export function matches(element, selector) {
+function matches(element, selector) {
     return (element.matches || element.matchesSelector || element.msMatchesSelector).call(element, selector);
 }
 
@@ -133,7 +170,7 @@ export function matches(element, selector) {
     ==============================================================
 */
 
-export function nodesToArray(nodes) {
+function nodesToArray(nodes) {
     if (!nodes || nodes.length === 0) {
         return false;
     } else {
@@ -141,7 +178,7 @@ export function nodesToArray(nodes) {
     }
 }
 
-export function whenReady(callback) {
+function whenReady(callback) {
     if (document.readyState != 'loading') {
         callback();
     } else {
