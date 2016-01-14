@@ -3,8 +3,6 @@
     ====================================================
 */
 
-const GOOGLE_MAPS_API_ELEMENT = 'google-maps-api-element';
-
 /*
     State
 */
@@ -26,7 +24,7 @@ window._initalizeGoogleMaps = function () {
     Export initialisation method
 */
 export default function (callback) {
-    if (!hasLoaded && document.getElementById(GOOGLE_MAPS_API_ELEMENT) !== null) {
+    if (!hasLoaded && !window.google && !window.google.maps) {
         let script = document.createElement('script');
         mapCallback = callback;
 

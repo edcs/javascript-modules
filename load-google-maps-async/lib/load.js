@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (callback) {
-    if (!hasLoaded && document.getElementById(GOOGLE_MAPS_API_ELEMENT) !== null) {
+    if (!hasLoaded && !window.google && !window.google.maps) {
         var script = document.createElement('script');
         mapCallback = callback;
 
@@ -23,8 +23,6 @@ exports.default = function (callback) {
     Google Maps Async loader
     ====================================================
 */
-
-var GOOGLE_MAPS_API_ELEMENT = 'google-maps-api-element';
 
 /*
     State
