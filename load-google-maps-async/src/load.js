@@ -3,9 +3,11 @@
     ====================================================
 */
 
+const GOOGLE_MAPS_API_ELEMENT = 'google-maps-api-element';
+
 /*
     State
-*/ 
+*/
 let hasLoaded = false; // [boolean] Has Google Maps downloaded?
 let mapCallback = function () {}; // [function] Callback to run when maps load
 
@@ -24,10 +26,11 @@ window._initalizeGoogleMaps = function () {
     Export initialisation method
 */
 export default function (callback) {
-    if (!hasLoaded) {
+    if (!hasLoaded && document.getElementById(GOOGLE_MAPS_API_ELEMENT) !== null) {
         let script = document.createElement('script');
         mapCallback = callback;
 
+        script.id = GOOGLE_MAPS_API_ELEMENT;
         script.type = 'text/javascript';
         script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false&callback=_initalizeGoogleMaps';
         
