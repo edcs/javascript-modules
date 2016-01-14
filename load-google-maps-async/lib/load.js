@@ -5,11 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (callback) {
-    if (!hasLoaded && !window.google && !window.google.maps) {
+    if (!window.google || !window.google.maps) {
         var script = document.createElement('script');
         mapCallback = callback;
 
-        script.id = GOOGLE_MAPS_API_ELEMENT;
         script.type = 'text/javascript';
         script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false&callback=_initalizeGoogleMaps';
 
@@ -27,7 +26,6 @@ exports.default = function (callback) {
 /*
     State
 */
-var hasLoaded = false; // [boolean] Has Google Maps downloaded?
 var mapCallback = function mapCallback() {}; // [function] Callback to run when maps load
 
 /*
@@ -37,7 +35,6 @@ var mapCallback = function mapCallback() {}; // [function] Callback to run when 
     through the function name as a string parameter to Google
 */
 window._initalizeGoogleMaps = function () {
-    hasLoaded = true;
     mapCallback();
 };
 
