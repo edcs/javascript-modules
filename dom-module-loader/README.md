@@ -2,10 +2,10 @@
 
 ## Init
 
-### With POD Point Module Loader
+### With Module Loader
 
-    import loadModules from '@pod-point/module-loader';
-    import combineDomModules from '@pod-point/dom-module-loader';
+    import loadModules from '@edcs/js-toolkit/module-loader';
+    import combineDomModules from '@edcs/js-toolkit/dom-module-loader';
 
     moduleLoader({
         domModules: combineDomModules({
@@ -16,7 +16,7 @@
 
 ### Solo
 
-    import combineDomModules from '@pod-point/dom-module-loader';
+    import combineDomModules from '@edcs/js-toolkit/dom-module-loader';
 
     combineDomModules({
         foo,
@@ -24,7 +24,8 @@
     }).init();
 
 #### DOM modules:
-- Export an `init` methods
+
+- Export an `init` method
 - Initialised by adding the imported module name to an element's `data-js-module` attribute.
 - Multiple names can be added and are space-delimited.
 - `init` is passed the element on which the module loader detected the `data-js-module` attribute.

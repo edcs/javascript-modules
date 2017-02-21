@@ -1,19 +1,7 @@
-/*
-    Module system
-
-    All modules export `init` methods.
-
-    Persistent modules:
-        - Can be initialised once per page.
-        - Can optionally export a `refresh` method.
-        - Are maintained between page transitions.
-*/
-
-// Other imports
 import { each } from '@pod-point/utils';
 
-var pageActive = false;
-var modules = {};
+let pageActive = false;
+let modules = {};
 
 function init(newModules) {
     modules = newModules;
