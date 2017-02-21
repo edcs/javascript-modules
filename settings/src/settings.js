@@ -1,1 +1,0 @@
-export const GREEN = '#8CC63F';
