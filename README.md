@@ -1,12 +1,14 @@
-# POD Point JavaScript modules
+# JavaScript modules
+
+This project was originally cloned from: https://github.com/Pod-point/javascript-modules
 
 ## Install
 
-    npm install @pod-point/module --save
+    npm install @edcs/module --save
 
 ## Import
 
-    import module from '@pod-point/module';
+    import module from '@edcs/module';
 
 ## Usage
 
@@ -20,6 +22,6 @@ All modules are written in ES6, and require Babel or another transpiler to conve
 
 Compile changes before commiting/publishing!
 
-    npm run compile
+    yarn compile
 
 All module versions follow [semver](http://semver.org).
