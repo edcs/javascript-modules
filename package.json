@@ -4,5 +4,13 @@
     "popmotion": "^3.6.1"
   },
   "devDependencies": {
-  }
+    "jest": "^19.0.0"
+  },
+  "name": "js-toolkit",
+  "version": "1.0.0-alpha",
+  "description": "A collection of useful JavaScript modules",
+  "main": "./src/index.js",
+  "repository": "https://edcs@github.com/edcs/js-toolkit.git",
+  "author": "Edward Coleridge Smith <edcoleridgesmith@gmail.com>",
+  "license": "MIT"
 }
