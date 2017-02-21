@@ -1,6 +1,6 @@
 # JavaScript modules
 
-This project was originally cloned from: https://github.com/Pod-point/javascript-modules
+This project was originally forked from: https://github.com/Pod-point/javascript-modules
 
 ## Install
 
