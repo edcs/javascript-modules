@@ -9,12 +9,12 @@ const each = (props, callback) => {
         return;
     }
 
-    let keys = Object.keys(props),
-        numKeys = keys.length;
+    const keys = Object.keys(props);
+    const numKeys = keys.length;
 
     for (let i = 0; i < numKeys; i++) {
-        let key = keys[i],
-            prop = props[key];
+        const key = keys[i];
+        const prop = props[key];
 
         if (callback(prop, key, props) === false) {
             break;

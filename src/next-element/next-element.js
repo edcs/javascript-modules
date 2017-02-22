@@ -4,8 +4,6 @@
  * @param element
  * @returns {Element}
  */
-const nextElement = (element) => {
-    return element.nextElementSibling;
-};
+const nextElement = element => element.nextElementSibling;
 
 export default nextElement;

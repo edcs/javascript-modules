@@ -1,21 +1,21 @@
 import select from '../select';
 import nodesToArray from '../nodes-to-array';
 
-let activeModules = [];
 let domModules = {};
+let activeModules = [];
 let definedDataTag = '';
 
-function init() {
-    let moduleElements = nodesToArray(select(`[${definedDataTag}]`));
+const init = () => {
+    const moduleElements = nodesToArray(select(`[${definedDataTag}]`));
 
     activeModules = [];
 
     if (moduleElements) {
-        moduleElements.forEach(element => {
-            let modulesToLoad = element.getAttribute(definedDataTag).split(' ');
+        moduleElements.forEach((element) => {
+            const modulesToLoad = element.getAttribute(definedDataTag).split(' ');
 
-            modulesToLoad.forEach(name => {
-                let module = domModules[name];
+            modulesToLoad.forEach((name) => {
+                const module = domModules[name];
 
                 if (module && module.init) {
                     module.init(element);
@@ -24,9 +24,9 @@ function init() {
             });
         });
     }
-}
+};
 
-function refresh() {
+const refresh = () => {
     activeModules.forEach((module) => {
         if (module.hasOwnProperty('destroy')) {
             module.destroy();
@@ -34,10 +34,10 @@ function refresh() {
     });
 
     init();
-}
+};
 
-export default function (modules, dataTag = 'data-js-module') {
+export default (modules, dataTag = 'data-js-module') => {
     domModules = modules;
     definedDataTag = dataTag;
-    return { init, refresh }
-}
+    return { init, refresh };
+};

@@ -4,8 +4,6 @@
  * @param element
  * @returns {Node}
  */
-const clone = (element) => {
-    return element.cloneNode(true);
-};
+const clone = element => element.cloneNode(true);
 
 export default clone;

@@ -4,7 +4,7 @@
  * @param callback
  */
 const whenReady = (callback) => {
-    if (document.readyState != 'loading') {
+    if (document.readyState !== 'loading') {
         callback();
     } else {
         document.addEventListener('DOMContentLoaded', callback);

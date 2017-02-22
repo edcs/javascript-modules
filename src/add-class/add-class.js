@@ -7,7 +7,7 @@ import nodesToArray from '../nodes-to-array';
  * @param className
  */
 const addClass = (element, className) => {
-    nodesToArray(element).forEach((node) => node.classList.add(className));
+    nodesToArray(element).forEach(node => node.classList.add(className));
 };
 
 export default addClass;

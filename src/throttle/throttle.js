@@ -8,16 +8,16 @@
 const throttle = (callback, limit = 35) => {
     let wait = false;
 
-    return function () {
+    return () => {
         if (!wait) {
             callback();
             wait = true;
 
-            setTimeout(function () {
+            setTimeout(() => {
                 wait = false;
             }, limit);
         }
-    }
+    };
 };
 
 export default throttle;

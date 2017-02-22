@@ -4,8 +4,6 @@
  * @param id
  * @returns {Element}
  */
-const selectById = (id) => {
-    return document.getElementById(id);
-};
+const selectById = id => document.getElementById(id);
 
 export default selectById;

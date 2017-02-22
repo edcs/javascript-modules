@@ -6,8 +6,6 @@
  * @param root
  * @returns {Element}
  */
-const selectFirst = (selector, root = document) => {
-    return root.querySelector(selector);
-};
+const selectFirst = (selector, root = document) => root.querySelector(selector);
 
 export default selectFirst;

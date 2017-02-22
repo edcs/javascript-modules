@@ -7,7 +7,7 @@
  * @returns {*}
  */
 const select = (selector, root = document) => {
-    let selection = root.querySelectorAll(selector);
+    const selection = root.querySelectorAll(selector);
 
     return selection.length ? selection : null;
 };

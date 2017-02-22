@@ -1,9 +1,9 @@
-import each from '../utils/each';
+import each from '../each';
 
-let pageActive = false;
 let modules = {};
+let pageActive = false;
 
-function init(newModules) {
+const init = (newModules) => {
     modules = newModules;
 
     each(modules, (module) => {
@@ -13,20 +13,20 @@ function init(newModules) {
     });
 
     pageActive = true;
-}
+};
 
-function reload() {
+const reload = () => {
     each(modules, (module) => {
         if (module.hasOwnProperty('refresh')) {
             module.refresh();
         }
     });
-}
+};
 
-export default function(newModules) {
+export default (newModules) => {
     if (pageActive) {
         reload();
     } else {
         init(newModules);
     }
-}
+};

@@ -4,8 +4,6 @@
  * @param tag
  * @returns {Element}
  */
-const create = (tag = 'div') => {
-    return document.createElement(tag);
-};
+const create = (tag = 'div') => document.createElement(tag);
 
 export default create;

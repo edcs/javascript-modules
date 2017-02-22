@@ -7,9 +7,9 @@
 const nodesToArray = (nodes) => {
     if (!nodes || nodes.length === 0) {
         return false;
-    } else {
-        return nodes.length ? [].slice.call(nodes) : [nodes];
     }
+
+    return nodes.length ? [].slice.call(nodes) : [nodes];
 };
 
 export default nodesToArray;

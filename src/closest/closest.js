@@ -9,21 +9,22 @@ import parent from '../parent';
  * @returns {*}
  */
 const closest = (element, selector) => {
-    let closest;
+    let closestElement;
+    let currentElement = element;
 
-    while (!closest) {
-        if (matches(element, selector)) {
-            closest = element;
+    while (!closestElement) {
+        if (matches(currentElement, selector)) {
+            closestElement = currentElement;
         }
 
-        element = parent(element);
+        currentElement = parent(currentElement);
 
-        if (!element || element === document) {
+        if (!currentElement || currentElement === document) {
             break;
         }
     }
 
-    return closest;
+    return closestElement;
 };
 
 export default closest;

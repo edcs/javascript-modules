@@ -7,6 +7,8 @@
   },
   "rules": {
     "max-len": [2, 120],
+    "no-plusplus": ["off"],
+    "no-prototype-builtins": ["off"],
     "func-names": ["error", "as-needed"],
     "indent": [2, 4, { "SwitchCase": 1, "VariableDeclarator": 1, "outerIIFEBody": 1 }]
   }

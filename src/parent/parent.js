@@ -4,8 +4,6 @@
  * @param element
  * @returns {*|Node}
  */
-const parent = (element) => {
-    return element.parentNode;
-};
+const parent = element => element.parentNode;
 
 export default parent;

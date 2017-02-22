@@ -5,8 +5,6 @@
  * @param selector
  * @returns {NodeList}
  */
-const child = (element, selector) => {
-    return element.querySelectorAll(selector);
-};
+const child = (element, selector) => element.querySelectorAll(selector);
 
 export default child;

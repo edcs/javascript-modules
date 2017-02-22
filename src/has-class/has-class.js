@@ -8,15 +8,15 @@ import nodesToArray from '../nodes-to-array';
  * @returns {boolean}
  */
 const hasClass = (element, className) => {
-    let hasClass = true;
+    let result = true;
 
     nodesToArray(element).forEach((node) => {
         if (!node.classList.contains(className)) {
-            hasClass = false;
+            result = false;
         }
     });
 
-    return hasClass;
+    return result;
 };
 
 export default hasClass;

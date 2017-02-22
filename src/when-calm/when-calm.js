@@ -8,13 +8,13 @@
 const whenCalm = (callback, timeout = 250) => {
     let timer;
 
-    return function () {
+    return () => {
         clearTimeout(timer);
 
         timer = setTimeout(() => {
             callback();
         }, timeout);
-    }
+    };
 };
 
 export default whenCalm;
