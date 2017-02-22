@@ -1,1 +1,3 @@
-export hasClass from './has-class';
+import hasClass from './has-class';
+
+export default hasClass;

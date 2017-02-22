@@ -1,3 +1,5 @@
+import nodesToArray from '../nodes-to-array';
+
 /**
  * Returns true if the element contains the class.
  *
