@@ -1,1 +1,3 @@
-export addClass from './add-class';
+import addClass from './add-class';
+
+export default addClass;

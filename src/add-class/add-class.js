@@ -1,4 +1,4 @@
-import nodesToArray from '../helpers/nodes-to-array';
+import nodesToArray from '../nodes-to-array';
 
 /**
  * Adds the class to the element.
