@@ -27,9 +27,8 @@
     "jest": "^19.0.0"
   },
   "jest": {
-    "verbose": true,
     "collectCoverageFrom": [
-      "src/**/*.{js,js}"
+      "src/**/*.{js}"
     ]
   }
 }

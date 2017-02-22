@@ -1,3 +1,6 @@
+import matches from '../matches';
+import parent from '../parent';
+
 /**
  * Finds the closest item within the element.
  *
