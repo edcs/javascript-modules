@@ -1,1 +1,3 @@
-export whenReady from './when-ready';
+import whenReady from './when-ready';
+
+export default whenReady;

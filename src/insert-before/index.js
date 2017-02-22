@@ -1,1 +1,3 @@
-export insertBefore from './insert-before';
+import insertBefore from './insert-before';
+
+export default insertBefore;

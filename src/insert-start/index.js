@@ -1,1 +1,3 @@
-export insertStart from './insert-start';
+import insertStart from './insert-start';
+
+export default insertStart;

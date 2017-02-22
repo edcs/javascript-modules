@@ -1,1 +1,3 @@
-export insertEnd from './insert-end';
+import insertEnd from './insert-end';
+
+export default insertEnd;

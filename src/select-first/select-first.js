@@ -6,6 +6,8 @@
  * @param root
  * @returns {Element}
  */
-export function selectFirst(selector, root = document) {
+const selectFirst = (selector, root = document) => {
     return root.querySelector(selector);
-}
+};
+
+export default selectFirst;

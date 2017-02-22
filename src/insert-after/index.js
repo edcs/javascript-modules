@@ -1,1 +1,3 @@
-export insertAfter from './insert-after';
+import insertAfter from './insert-after';
+
+export default insertAfter;

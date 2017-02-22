@@ -1,1 +1,3 @@
-export whenCalm from './when-calm';
+import whenCalm from './when-calm';
+
+export default whenCalm;

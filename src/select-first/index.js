@@ -1,1 +1,3 @@
-export selectFirst from './select-first';
+import selectFirst from './select-first';
+
+export default selectFirst;

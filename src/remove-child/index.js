@@ -1,1 +1,3 @@
-export removeChild from './remove-child';
+import removeChild from './remove-child';
+
+export default removeChild;

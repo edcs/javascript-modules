@@ -1,1 +1,3 @@
-export throttle from './throttle';
+import throttle from './throttle';
+
+export default throttle;
