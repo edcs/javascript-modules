@@ -1,4 +1,4 @@
-import addClass from './add-class';
+import addClass from './';
 import nodesToArray from '../nodes-to-array';
 
 describe('addClass()', () => {

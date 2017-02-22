@@ -1,4 +1,4 @@
-import hasClass from './has-class';
+import hasClass from './';
 import addClass from '../add-class';
 
 describe('hasClass()', () => {

@@ -1,4 +1,4 @@
-import child from './child';
+import child from './';
 import appendChild from '../append-child';
 import nodesToArray from '../nodes-to-array';
 

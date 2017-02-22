@@ -1,4 +1,4 @@
-import appendChild from './append-child';
+import appendChild from './';
 import nodesToArray from '../nodes-to-array';
 
 describe('appendChild()', () => {

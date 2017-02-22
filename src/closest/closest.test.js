@@ -1,4 +1,4 @@
-import closest from './closest';
+import closest from './';
 import addClass from '../add-class';
 
 describe('closest()', () => {
