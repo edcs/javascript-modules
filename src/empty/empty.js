@@ -1,4 +1,4 @@
-import '../helpers/nodes-to-array';
+import nodesToArray from '../nodes-to-array';
 
 /**
  * Removes all children from the element.
