@@ -1,6 +1,5 @@
-import { select, nodesToArray } from '../dom-ops';
-
-const DATA_TAG = 'data-js-module';
+import select from '../select';
+import nodesToArray from '../nodes-to-array';
 
 let activeModules = [];
 let domModules = {};
@@ -37,7 +36,7 @@ function refresh() {
     init();
 }
 
-export default function (modules, dataTag = DATA_TAG) {
+export default function (modules, dataTag = 'data-js-module') {
     domModules = modules;
     definedDataTag = dataTag;
     return { init, refresh }

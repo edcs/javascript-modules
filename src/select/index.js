@@ -1,1 +1,3 @@
-export select from './select';
+import select from './select';
+
+export default select;
