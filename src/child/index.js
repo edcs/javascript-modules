@@ -1,1 +1,3 @@
-export child from './child';
+import child from './child';
+
+export default child;
