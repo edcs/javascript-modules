@@ -2,8 +2,7 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "env":{
-    "browser": true,
-    "node": true
+    "browser": true
   },
   "rules": {
     "max-len": [2, 120],
