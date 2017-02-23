@@ -7,9 +7,9 @@
   "author": "Edward Coleridge Smith <edcoleridgesmith@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean:build && npm run build:babel",
+    "build": "npm run build:clean && npm run build:babel",
+    "build:clean": "rimraf build",
     "build:babel": "NODE_ENV=release babel ./src --out-dir ./build --ignore test.js",
-    "clean:build": "rimraf build",
     "test": "./node_modules/.bin/jest",
     "coverage": "./node_modules/.bin/jest --coverage",
     "lint": "./node_modules/.bin/eslint src/ || true"
