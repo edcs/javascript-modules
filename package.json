@@ -2,7 +2,7 @@
   "name": "@edcs/js-toolkit",
   "version": "0.0.1-alpha",
   "description": "A collection of useful JavaScript modules",
-  "main": "./src/index.js",
+  "main": "./build/index.js",
   "repository": "https://edcs@github.com/edcs/js-toolkit.git",
   "author": "Edward Coleridge Smith <edcoleridgesmith@gmail.com>",
   "license": "MIT",
