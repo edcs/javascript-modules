@@ -1,4 +1,4 @@
-import create from './';
+import { create } from '../';
 
 describe('create()', () => {
 

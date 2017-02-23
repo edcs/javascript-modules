@@ -1,4 +1,4 @@
-import each from './';
+import { each } from '../';
 
 describe('each()', () => {
 

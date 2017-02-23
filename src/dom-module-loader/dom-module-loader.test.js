@@ -1,4 +1,4 @@
-import domModuleLoader from './';
+import { domModuleLoader } from '../';
 
 describe('domModuleLoader()', () => {
 

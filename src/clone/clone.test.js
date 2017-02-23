@@ -1,4 +1,4 @@
-import clone from './';
+import { clone } from '../';
 
 describe('clone()', () => {
 

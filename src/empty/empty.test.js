@@ -1,4 +1,4 @@
-import empty from './';
+import { empty } from '../';
 
 describe('empty()', () => {
 
