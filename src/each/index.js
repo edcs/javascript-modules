@@ -1,3 +1,1 @@
-import each from './each';
-
-export default each;
+export default from './each';

@@ -1,3 +1,1 @@
-import moduleLoader from './module-loader';
-
-export default moduleLoader;
+export default from './module-loader';

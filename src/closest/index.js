@@ -1,3 +1,1 @@
-import closest from './closest';
-
-export default closest;
+export default from './closest';

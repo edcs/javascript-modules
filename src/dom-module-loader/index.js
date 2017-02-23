@@ -1,3 +1,1 @@
-import domModuleLoader from './dom-module-loader';
-
-export default domModuleLoader;
+export default from './dom-module-loader';

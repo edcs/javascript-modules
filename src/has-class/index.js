@@ -1,3 +1,1 @@
-import hasClass from './has-class';
-
-export default hasClass;
+export default from './has-class';

@@ -1,3 +1,1 @@
-import matches from './matches';
-
-export default matches;
+export default from './matches';

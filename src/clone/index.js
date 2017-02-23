@@ -1,3 +1,1 @@
-import clone from './clone';
-
-export default clone;
+export default from './clone';

@@ -1,3 +1,1 @@
-import appendChild from './append-child';
-
-export default appendChild;
+export default from './append-child';

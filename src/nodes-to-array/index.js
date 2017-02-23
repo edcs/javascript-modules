@@ -1,3 +1,1 @@
-import nodesToArray from './nodes-to-array';
-
-export default nodesToArray;
+export default from './nodes-to-array';

@@ -1,3 +1,1 @@
-import removeClass from './remove-class';
-
-export default removeClass;
+export default from './remove-class';

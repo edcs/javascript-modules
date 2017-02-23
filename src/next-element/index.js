@@ -1,3 +1,1 @@
-import nextElement from './next-element';
-
-export default nextElement;
+export default from './next-element';

@@ -1,3 +1,1 @@
-import selectById from './select-by-id';
-
-export default selectById;
+export default from './select-by-id';
