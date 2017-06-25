@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/when-ready",
+  "main": "../build/when-ready/when-ready.js"
+}

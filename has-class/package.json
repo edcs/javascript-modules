@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/has-class",
+  "main": "../build/has-class/has-class.js"
+}

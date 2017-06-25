@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/module-loader",
+  "main": "../build/module-loader/module-loader.js"
+}

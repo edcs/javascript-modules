@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/nodes-to-array",
+  "main": "../build/nodes-to-array/nodes-to-array.js"
+}

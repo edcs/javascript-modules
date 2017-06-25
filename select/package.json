@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/select",
+  "main": "../build/select/select.js"
+}

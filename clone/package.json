@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/clone",
+  "main": "../build/clone/clone.js"
+}

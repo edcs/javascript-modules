@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/remove-child",
+  "main": "../build/remove-child/remove-child.js"
+}

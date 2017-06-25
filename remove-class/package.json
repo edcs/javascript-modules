@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/remove-class",
+  "main": "../build/remove-class/remove-class.js"
+}

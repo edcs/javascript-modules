@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/insert-start",
+  "main": "../build/insert-start/insert-start.js"
+}

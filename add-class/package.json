@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/add-class",
+  "main": "../build/add-class/add-class.js"
+}

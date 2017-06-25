@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/insert-after",
+  "main": "../build/insert-after/insert-after.js"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/next-element",
+  "main": "../build/next-element/next-element.js"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/create",
+  "main": "../build/create/create.js"
+}

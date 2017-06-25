@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/select-by-id",
+  "main": "../build/select-by-id/select-by-id.js"
+}

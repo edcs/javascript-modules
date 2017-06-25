@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/matches",
+  "main": "../build/matches/matches.js"
+}

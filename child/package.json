@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/child",
+  "main": "../build/child/child.js"
+}

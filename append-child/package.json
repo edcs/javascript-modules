@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/append-child",
+  "main": "../build/append-child/append-child.js"
+}

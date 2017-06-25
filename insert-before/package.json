@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/insert-before",
+  "main": "../build/insert-before/insert-before.js"
+}

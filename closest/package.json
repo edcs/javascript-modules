@@ -1,0 +1,4 @@
+{
+  "name": "js-toolkit/closest",
+  "main": "../build/closest/closest.js"
+}

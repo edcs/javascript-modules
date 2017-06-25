@@ -2,11 +2,14 @@
   "name": "@edcs/js-toolkit",
   "version": "0.0.1-alpha",
   "description": "A collection of useful JavaScript modules",
-  "main": "src/index.js",
+  "main": "index.js",
   "repository": "https://edcs@github.com/edcs/js-toolkit.git",
   "author": "Edward Coleridge Smith <edcoleridgesmith@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "npm run build:clean && npm run build:babel",
+    "build:clean": "rimraf build",
+    "build:babel": "NODE_ENV=release babel ./index.js ./**/*.js --out-dir ./build --ignore test.js",
     "test": "./node_modules/.bin/jest",
     "coverage": "./node_modules/.bin/jest --coverage",
     "lint": "./node_modules/.bin/eslint src/ || true"
@@ -28,7 +31,7 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js}"
+      "./**/*.{js}"
     ]
   }
 }
