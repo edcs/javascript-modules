@@ -33,6 +33,11 @@
     "collectCoverageFrom": [
       "**/*.js"
     ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/coverage/",
+      "/build/"
+    ],
     "coverageDirectory": "./coverage/"
   }
 }
