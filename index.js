@@ -1,26 +1,55 @@
-export addClass from './add-class';
-export appendChild from './append-child';
-export child from './child';
-export clone from './clone';
-export closest from './closest';
-export create from './create';
-export domModuleLoader from './dom-module-loader';
-export each from './each';
-export empty from './empty';
-export hasClass from './has-class';
-export insertAfter from './insert-after';
-export insertBefore from './insert-before';
-export insertEnd from './insert-end';
-export insertStart from './insert-start';
-export moduleLoader from './module-loader';
-export nextElement from './next-element';
-export nodesToArray from './nodes-to-array';
-export parent from './parent';
-export removeChild from './remove-child';
-export removeClass from './remove-class';
-export select from './select';
-export selectById from './select-by-id';
-export selectFirst from './select-first';
-export throttle from './throttle';
-export whenCalm from './when-calm';
-export whenReady from './when-ready';
+import addClass from './add-class';
+import appendChild from './append-child';
+import child from './child';
+import clone from './clone';
+import closest from './closest';
+import create from './create';
+import domModuleLoader from './dom-module-loader';
+import each from './each';
+import empty from './empty';
+import hasClass from './has-class';
+import insertAfter from './insert-after';
+import insertBefore from './insert-before';
+import insertEnd from './insert-end';
+import insertStart from './insert-start';
+import moduleLoader from './module-loader';
+import nextElement from './next-element';
+import nodesToArray from './nodes-to-array';
+import parent from './parent';
+import removeChild from './remove-child';
+import removeClass from './remove-class';
+import select from './select';
+import selectById from './select-by-id';
+import selectFirst from './select-first';
+import throttle from './throttle';
+import whenCalm from './when-calm';
+import whenReady from './when-ready';
+
+export default {
+    addClass,
+    appendChild,
+    child,
+    clone,
+    closest,
+    create,
+    domModuleLoader,
+    each,
+    empty,
+    hasClass,
+    insertAfter,
+    insertBefore,
+    insertEnd,
+    insertStart,
+    moduleLoader,
+    nextElement,
+    nodesToArray,
+    parent,
+    removeChild,
+    removeClass,
+    select,
+    selectById,
+    selectFirst,
+    throttle,
+    whenCalm,
+    whenReady,
+};
