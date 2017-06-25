@@ -1,55 +1,26 @@
-import addClass from './add-class';
-import appendChild from './append-child';
-import child from './child';
-import clone from './clone';
-import closest from './closest';
-import create from './create';
-import domModuleLoader from './dom-module-loader';
-import each from './each';
-import empty from './empty';
-import hasClass from './has-class';
-import insertAfter from './insert-after';
-import insertBefore from './insert-before';
-import insertEnd from './insert-end';
-import insertStart from './insert-start';
-import moduleLoader from './module-loader';
-import nextElement from './next-element';
-import nodesToArray from './nodes-to-array';
-import parent from './parent';
-import removeChild from './remove-child';
-import removeClass from './remove-class';
-import select from './select';
-import selectById from './select-by-id';
-import selectFirst from './select-first';
-import throttle from './throttle';
-import whenCalm from './when-calm';
-import whenReady from './when-ready';
-
-export default {
-    addClass,
-    appendChild,
-    child,
-    clone,
-    closest,
-    create,
-    domModuleLoader,
-    each,
-    empty,
-    hasClass,
-    insertAfter,
-    insertBefore,
-    insertEnd,
-    insertStart,
-    moduleLoader,
-    nextElement,
-    nodesToArray,
-    parent,
-    removeChild,
-    removeClass,
-    select,
-    selectById,
-    selectFirst,
-    throttle,
-    whenCalm,
-    whenReady,
-};
+export { default as addClass } from './add-class';
+export { default as appendChild } from './append-child';
+export { default as child } from './child';
+export { default as clone } from './clone';
+export { default as closest } from './closest';
+export { default as create } from './create';
+export { default as domModuleLoader } from './dom-module-loader';
+export { default as each } from './each';
+export { default as empty } from './empty';
+export { default as hasClass } from './has-class';
+export { default as insertAfter } from './insert-after';
+export { default as insertBefore } from './insert-before';
+export { default as insertEnd } from './insert-end';
+export { default as insertStart } from './insert-start';
+export { default as moduleLoader } from './module-loader';
+export { default as nextElement } from './next-element';
+export { default as nodesToArray } from './nodes-to-array';
+export { default as parent } from './parent';
+export { default as removeChild } from './remove-child';
+export { default as removeClass } from './remove-class';
+export { default as select } from './select';
+export { default as selectById } from './select-by-id';
+export { default as selectFirst } from './select-first';
+export { default as throttle } from './throttle';
+export { default as whenCalm } from './when-calm';
+export { default as whenReady } from './when-ready';
