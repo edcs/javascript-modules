@@ -1,5 +1,5 @@
-import select from '../select';
-import nodesToArray from '../nodes-to-array';
+import select from '../select/select';
+import nodesToArray from '../nodes-to-array/nodes-to-array';
 
 let domModules = {};
 let activeModules = [];

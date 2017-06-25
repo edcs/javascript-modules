@@ -4,11 +4,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _matches = require('../matches');
+var _matches = require('../matches/matches');
 
 var _matches2 = _interopRequireDefault(_matches);
 
-var _parent = require('../parent');
+var _parent = require('../parent/parent');
 
 var _parent2 = _interopRequireDefault(_parent);
 

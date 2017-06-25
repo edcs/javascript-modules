@@ -4,11 +4,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _select = require('../select');
+var _select = require('../select/select');
 
 var _select2 = _interopRequireDefault(_select);
 
-var _nodesToArray = require('../nodes-to-array');
+var _nodesToArray = require('../nodes-to-array/nodes-to-array');
 
 var _nodesToArray2 = _interopRequireDefault(_nodesToArray);
 

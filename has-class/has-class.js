@@ -1,4 +1,4 @@
-import nodesToArray from '../nodes-to-array';
+import nodesToArray from '../nodes-to-array/nodes-to-array';
 
 /**
  * Returns true if the element contains the class.

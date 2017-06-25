@@ -1,4 +1,4 @@
-import each from '../each';
+import each from '../each/each';
 
 let modules = {};
 let pageActive = false;

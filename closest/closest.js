@@ -1,5 +1,5 @@
-import matches from '../matches';
-import parent from '../parent';
+import matches from '../matches/matches';
+import parent from '../parent/parent';
 
 /**
  * Finds the closest item within the element.
