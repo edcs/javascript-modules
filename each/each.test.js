@@ -14,6 +14,14 @@ describe('each()', () => {
         });
     });
 
+    it("doesn't fail if array is empty", () => {
+        each([], (value, key) => { });
+    });
+
+    it("doesn't fail if array is empty", () => {
+        each({}, (value, key) => { });
+    });
+
     it('can cancel iteration', () => {
         const callback = jest.fn().mockReturnValue(false);
 
