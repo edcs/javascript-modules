@@ -18,8 +18,12 @@ describe('each()', () => {
         each([], (value, key) => { });
     });
 
-    it("doesn't fail if array is empty", () => {
+    it("doesn't fail if object is empty", () => {
         each({}, (value, key) => { });
+    });
+
+    it("doesn't fail if iterator is null", () => {
+        each(null, (value, key) => { });
     });
 
     it('can cancel iteration', () => {
