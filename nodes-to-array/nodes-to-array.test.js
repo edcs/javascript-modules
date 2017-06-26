@@ -13,4 +13,10 @@ describe('nodesToArray()', () => {
         expect(nodesToArray(parent.childNodes)).toBeInstanceOf(Array);
     });
 
+    it('can handle an empty nodelist', () => {
+        const parent = document.createElement('div');
+
+        expect(nodesToArray(parent.childNodes)).toBe(false);
+    });
+
 });
