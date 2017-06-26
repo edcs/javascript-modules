@@ -9,7 +9,7 @@ const throttle = (callback, limit = 35) => {
     let wait = false;
 
     return () => {
-        if (!wait) {
+        if (wait === false) {
             callback();
             wait = true;
 
