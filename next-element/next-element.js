@@ -1,7 +1,7 @@
 /**
- * Finds the item next to the element.
+ * Returns the next sibling element to `element`.
  *
- * @param element
+ * @param {Element} element
  * @returns {Element}
  */
 const nextElement = element => element.nextElementSibling;
