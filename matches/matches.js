@@ -1,5 +1,5 @@
 /**
- * Returns the item which matches the selector in the element.
+ * Returns true if element matches selector.
  *
  * @param element
  * @param selector

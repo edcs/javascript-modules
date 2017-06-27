@@ -12,6 +12,7 @@ export { default as insertAfter } from './insert-after/insert-after';
 export { default as insertBefore } from './insert-before/insert-before';
 export { default as insertEnd } from './insert-end/insert-end';
 export { default as insertStart } from './insert-start/insert-start';
+export { default as matches } from './matches/matches';
 export { default as moduleLoader } from './module-loader/module-loader';
 export { default as nextElement } from './next-element/next-element';
 export { default as nodesToArray } from './nodes-to-array/nodes-to-array';
