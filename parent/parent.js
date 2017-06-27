@@ -1,8 +1,8 @@
 /**
- * Finds the parent of the supplied element.
+ * Returns the parent element to `element`.
  *
- * @param element
- * @returns {*|Node}
+ * @param {Element} element
+ * @returns {Element}
  */
 const parent = element => element.parentNode;
 
