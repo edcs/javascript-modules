@@ -1,6 +1,6 @@
 import { removeChild } from '../';
 
-describe('parent()', () => {
+describe('removeChild()', () => {
 
     it('can remove element from parent', () => {
         const parent = document.createElement('div');

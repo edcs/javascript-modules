@@ -1,7 +1,7 @@
 import nodesToArray from '../nodes-to-array/nodes-to-array';
 
 /**
- * Removes the class from the element.
+ * Removes a class from one or multiple elements.
  *
  * @param element
  * @param className

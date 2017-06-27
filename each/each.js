@@ -1,22 +1,22 @@
 /**
- * Iterates over the props.
+ * Loops over an iterable object.
  *
- * @param props
- * @param callback
+ * @param {Object} iterable
+ * @param {Function} callback
  */
-const each = (props, callback) => {
-    if (!props) {
+const each = (iterable, callback) => {
+    if (!iterable) {
         return;
     }
 
-    const keys = Object.keys(props);
+    const keys = Object.keys(iterable);
     const numKeys = keys.length;
 
     for (let i = 0; i < numKeys; i++) {
         const key = keys[i];
-        const prop = props[key];
+        const item = iterable[key];
 
-        if (callback(prop, key, props) === false) {
+        if (callback(item, key, iterable) === false) {
             break;
         }
     }
