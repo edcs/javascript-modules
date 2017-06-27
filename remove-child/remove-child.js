@@ -1,11 +1,11 @@
 /**
- * Removes the child element from the host.
+ * Removes `element` from `parent`.
  *
- * @param host
+ * @param parent
  * @param element
  */
-const removeChild = (host, element) => {
-    host.removeChild(element);
+const removeChild = (parent, element) => {
+    parent.removeChild(element);
 };
 
 export default removeChild;
